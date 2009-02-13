@@ -1,0 +1,29 @@
+DirectoryIndex index.html index.shtml
+
+RewriteEngine on
+
+# Combine and minify JavaScript and CSS with Minify.
+# RewriteRule ^(.*\.(css|js))$ /minify/minify.php?files=$1 [L,NC]
+
+# No hot linking of images
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://([a-z0-9]+\.)?philoye\.com [NC]
+RewriteRule \.(gif|jpe?g|png)$ - [F,NC,L] 
+
+php_value register_globals off
+
+
+
+#forward .com.au/.co.nz to .com
+RewriteCond %{HTTP_HOST} ^philoye\.com\.au
+RewriteRule (.*) http://www.philoye.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www\.philoye\.com\.au
+RewriteRule (.*) http://www.philoye.com/$1 [R=301,L]
+
+# Forward www to no-www
+RewriteCond %{HTTP_HOST} ^www\.philoye\.com$ [NC]
+RewriteRule ^(.*)$ http://philoye.com/$1 [R=301,L]
+
+#Fix trailing slash problem
+RewriteRule ^([^\.]+[^/])$ http://philoye\.com/$1/ [R=301,L]
