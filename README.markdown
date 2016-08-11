@@ -14,11 +14,6 @@ If you change `helpers.rb`, you'll need to kill and restart guard.
 ## Deployment
 Run `rake deploy`, which will copy the contents of the build directory to your production server.
 
-## TODO
-I will unlikely ever get around to it, but:
-
-* Deploy using a git post-commit hook
-
 ## License
 Content, logos, and photos: All rights reserved.
 Code is MIT licensed.
