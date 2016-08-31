@@ -12,7 +12,7 @@ For live compilation, from the project root run `bundle exec guard`. This will c
 If you change `helpers.rb`, you'll need to kill and restart guard.
 
 ## Deployment
-Run `rake deploy`, which will copy the contents of the build directory to your production server.
+Run `rake deploy`, which will copy the contents of the build directory to your production server using `scp`.
 
 ## License
 Content, logos, and photos: All rights reserved.
