@@ -117,6 +117,9 @@
       .Stripe--Moment
         background-color: #404041
 
+      .Stripe--Atlassian
+        background-color: #205081
+
       .Stripe--CampaignMonitor
         background-color: #18a0d9
 
@@ -186,6 +189,16 @@
         .Stripe__Leadin
           %h2
             What I'm currently working on…
+
+    %section.Stripe.Stripe--Reversed.Stripe--Atlassian
+      .Stripe__Inner
+        .Logo
+          %a{href: 'https://atlassian.com'}
+            = inline_svg 'atlassian'
+        %p
+          I recently started at Atlassian as a Senior Product Manager to work on the Confluence team.
+        %p
+          %a{href: 'https://atlassian.com'} Atlassian.com
 
     %section.Stripe.Stripe--Reversed.Stripe--Labcoat
       .Stripe__Inner
