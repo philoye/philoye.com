@@ -48,6 +48,7 @@
         font-size: 1rem
         font-weight: normal
         margin-bottom: 1rem
+        text-align: center
 
       h3
         font-style: italic
@@ -154,8 +155,6 @@
         path
           fill: white
 
-
-
     :javascript
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -187,8 +186,7 @@
             - svg_use_tag '#download', 'Icon Icon--Smaller'
 
         .Stripe__Leadin
-          %h2
-            What I'm currently working on…
+          %h2 What I'm currently working on…
 
     %section.Stripe.Stripe--Reversed.Stripe--Atlassian
       .Stripe__Inner
@@ -205,8 +203,7 @@
         .Logo
           %a{href: 'https://labcoat.io'}
             = inline_svg 'labcoat'
-        %p
-          I've been building a new way for product teams to design and iterate websites right in the browser.
+        %p I've been building a new way for product teams to design and iterate websites right in the browser.
         %p
           %a{href: 'https://labcoat.io'} Labcoat.io
 
@@ -215,9 +212,7 @@
 
     %section.Stripe.Stripe--Reversed.Stripe--CampaignMonitor
       .Stripe__Inner
-        %p
-          %em
-            2014–2015
+        %h3 2014–2015
         .Logo
           %a{href: 'http://campaignmonitor.com'}
             = inline_svg 'campaignmonitor'
@@ -225,9 +220,7 @@
 
     %section.Stripe.Stripe--Reversed.Stripe--Moment
       .Stripe__Inner
-        %p
-          %em
-            2002–2016
+        %h3 2002–2016
         .Logo
           %a{href: 'http://moment.com.au'}
             = inline_svg 'moment'
@@ -236,18 +229,14 @@
 
     %section.Stripe.Stripe--Reversed.Stripe--Sapient.Stripe--Previously
       .Stripe__Inner
-        %p
-          %em
-            1999–2002
+        %h3 1999–2002
         .Logo
           %a{href: 'http://sapient.com'}
             = inline_svg 'sapient'
 
     %section.Stripe.Stripe--Reversed.Stripe--Maya.Stripe--Previously
       .Stripe__Inner
-        %p
-          %em
-            1996–1999
+        %h3 1996–1999
         .Logo
           %a{href: 'http://maya.com'}
             = inline_svg 'maya'
