@@ -44,6 +44,14 @@
         font-size: 150%
         font-weight: bold
 
+      h2, h3
+        font-size: 1rem
+        font-weight: normal
+        margin-bottom: 1rem
+
+      h3
+        font-style: italic
+
       .Icon
         border-radius: 3px
         display: inline-block
@@ -89,7 +97,7 @@
           margin: auto
         .Stripe__Leadin
           position: absolute
-          bottom: 1rem
+          bottom: 0
           width: 300px
           text-align: center
 
@@ -147,7 +155,8 @@
             - svg_use_tag '#download', 'Icon Icon--Smaller'
 
         .Stripe__Leadin
-          What I'm currently working on…
+          %h2
+            What I'm currently working on…
 
     %section.Stripe.Stripe--Reversed.Stripe--Labcoat
       .Stripe__Inner
