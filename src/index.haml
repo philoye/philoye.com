@@ -117,6 +117,15 @@
       .Stripe--Moment
         background-color: #404041
 
+      .Stripe--CampaignMonitor
+        background-color: #18a0d9
+
+      .Stripe--Sapient
+        background-color: #E65C3D
+
+      .Stripe--Maya
+        background-color: rgb(7,99,99)
+
       .Stripe--Reversed
         color: white
         a, a:hover
@@ -130,6 +139,17 @@
           width: 250px
           height: 100px
           display: block
+
+      .campaignmonitor-logo .logo-color
+        fill: white
+
+      svg.maya-logo
+        height: 35px
+
+      svg.sapient-logo
+        height: 65px
+        path
+          fill: white
 
 
 
@@ -180,6 +200,16 @@
     %section.Stripe--Separator
       %h2 Previously…
 
+    %section.Stripe.Stripe--Reversed.Stripe--CampaignMonitor
+      .Stripe__Inner
+        %p
+          %em
+            2014–2015
+        .Logo
+          %a{href: 'http://campaignmonitor.com'}
+            = inline_svg 'campaignmonitor'
+        %p I worked at Campaign Monitor as a Product Manager and launched <a href="https://www.campaignmonitor.com/features/transactional-email/">Transactional Email</a>.
+
     %section.Stripe.Stripe--Reversed.Stripe--Moment
       .Stripe__Inner
         %p
@@ -190,6 +220,24 @@
             = inline_svg 'moment'
         -# %p I’ve been helping my clients figure out what to do on the web and on mobile, and how to do it. My focus is equal parts design thinking and product design, typically in complex problem domains.
         %p Co-founder of Moment, a New York-based digital strategy and design agency. Planted the flag in Sydney in 2006 to help Australian clients.
+
+    %section.Stripe.Stripe--Reversed.Stripe--Sapient.Stripe--Previously
+      .Stripe__Inner
+        %p
+          %em
+            1999–2002
+        .Logo
+          %a{href: 'http://sapient.com'}
+            = inline_svg 'sapient'
+
+    %section.Stripe.Stripe--Reversed.Stripe--Maya.Stripe--Previously
+      .Stripe__Inner
+        %p
+          %em
+            1996–1999
+        .Logo
+          %a{href: 'http://maya.com'}
+            = inline_svg 'maya'
 
     %footer
       %p
