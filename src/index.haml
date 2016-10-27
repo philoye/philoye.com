@@ -169,22 +169,27 @@
 
     %section.Stripe.Stripe--Reversed.Stripe--Labcoat
       .Stripe__Inner
-        = inline_svg 'labcoat'
+        .Logo
+          %a{href: 'https://labcoat.io'}
+            = inline_svg 'labcoat'
         %p
           I've been building a new way for product teams to design and iterate websites right in the browser.
         %p
-          Check it out at:
           %a{href: 'https://labcoat.io'} Labcoat.io
+
+    %section.Stripe--Separator
+      %h2 Previously…
 
     %section.Stripe.Stripe--Reversed.Stripe--Moment
       .Stripe__Inner
-        = inline_svg 'moment'
         %p
-          Since 2002, I’ve been helping my clients figure out what to do on the web and on mobile, and how to do it. My focus is equal parts design thinking and product design, typically in complex problem domains.
-
-        %p
-          Interested?
-          %a{href: "mailto:#{ENV['EMAIL_ADDRESS']}"} Get in touch
+          %em
+            2002–2016
+        .Logo
+          %a{href: 'http://moment.com.au'}
+            = inline_svg 'moment'
+        -# %p I’ve been helping my clients figure out what to do on the web and on mobile, and how to do it. My focus is equal parts design thinking and product design, typically in complex problem domains.
+        %p Co-founder of Moment, a New York-based digital strategy and design agency. Planted the flag in Sydney in 2006 to help Australian clients.
 
     %footer
       %p
