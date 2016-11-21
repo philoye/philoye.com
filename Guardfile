@@ -13,7 +13,11 @@
 require './helpers'
 
 guard 'haml', run_at_start: true, input: 'src', output: 'build' do
-  watch(/^.+(\.haml)/)
+  watch(/^[^_].+(\.haml)/)
+
+  watch(/_{1}.+(\.haml)/) do |f|
+    `touch src/*.haml`
+  end
 end
 
 guard :copy, run_at_start: true, from: 'public', to: 'build' 
