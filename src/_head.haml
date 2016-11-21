@@ -16,7 +16,23 @@
 :sass
   $text-dark:  #444
   $text-light: #888
-  $link-color: darken(red, 10%)
+  $link-color: #666
+
+  .BackToHome
+    position: absolute
+    top: 1rem
+    left: 1rem
+
+  .float-right
+    float: right
+    width: 50%
+    height: auto
+    padding-left: 1rem
+    padding-bottom: 1rem
+
+  .u-half-width
+    width: 48%
+    height: auto
 
   *
     -webkit-font-smoothing: antialiased
@@ -37,6 +53,8 @@
   .avatar
     border-radius: 50%
     border: 3px solid #bbb
+    &.avatar-small
+      border-width: 2px
   h1
     font-size: 150%
     font-weight: bold
@@ -151,6 +169,37 @@
     height: 65px
     path
       fill: white
+
+  .Article
+    max-width: 40rem
+    margin: 0 auto
+    text-align: left
+    clear: all
+
+  .Article
+    margin-top: 10rem
+    a
+      color: darken(red, 15%)
+      border-bottom: 1px dotted darken(red, 15%)
+
+    img
+      display: inline
+    .lede
+      padding-bottom: 3rem
+
+  dl
+    overflow: auto
+    margin-bottom: 1rem
+  dt
+    font-weight: bold
+    float: left
+    width: 6em
+    clear: both
+  dd
+    float: left
+
+  .smallcaps
+    font-variant: small-caps
 
 :javascript
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

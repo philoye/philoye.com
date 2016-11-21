@@ -18,6 +18,22 @@
       try{Typekit.load({ async: true });}catch(e){}
     </script>
     <style>
+      .BackToHome {
+        position: absolute;
+        top: 1rem;
+        left: 1rem; }
+      
+      .float-right {
+        float: right;
+        width: 50%;
+        height: auto;
+        padding-left: 1rem;
+        padding-bottom: 1rem; }
+      
+      .u-half-width {
+        width: 48%;
+        height: auto; }
+      
       * {
         -webkit-font-smoothing: antialiased;
         margin: 0;
@@ -37,6 +53,8 @@
       .avatar {
         border-radius: 50%;
         border: 3px solid #bbb; }
+        .avatar.avatar-small {
+          border-width: 2px; }
       
       h1 {
         font-size: 150%;
@@ -63,14 +81,14 @@
           width: 30px; }
       
       a, a:visited {
-        color: #cc0000;
+        color: #666;
         text-decoration: none; }
         a .Icon, a:visited .Icon {
           fill: #444; }
         a:hover, a:visited:hover {
-          color: #cc0000; }
+          color: #666; }
           a:hover .Icon, a:visited:hover .Icon {
-            fill: #cc0000; }
+            fill: #666; }
       
       nav a {
         text-decoration: none;
@@ -152,6 +170,38 @@
         height: 65px; }
         svg.sapient-logo path {
           fill: white; }
+      
+      .Article {
+        max-width: 40rem;
+        margin: 0 auto;
+        text-align: left;
+        clear: all; }
+      
+      .Article {
+        margin-top: 10rem; }
+        .Article a {
+          color: #b30000;
+          border-bottom: 1px dotted #b30000; }
+        .Article img {
+          display: inline; }
+        .Article .lede {
+          padding-bottom: 3rem; }
+      
+      dl {
+        overflow: auto;
+        margin-bottom: 1rem; }
+      
+      dt {
+        font-weight: bold;
+        float: left;
+        width: 6em;
+        clear: both; }
+      
+      dd {
+        float: left; }
+      
+      .smallcaps {
+        font-variant: small-caps; }
     </style>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
