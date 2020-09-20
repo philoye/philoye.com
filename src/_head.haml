@@ -14,7 +14,11 @@
 :sass
   $text-dark:  #444
   $text-light: #888
-  $link-color: #666
+  $link-color: #0052CC
+
+  a
+    color: $link-color
+    border-bottom: 1px dotted $link-color
 
   .BackToHome
     position: absolute
@@ -94,6 +98,7 @@
       text-align: left
       font-weight: bold
       color: $text-dark
+      border-bottom: 0
       &.text
         margin-left: 2px
         position: relative
@@ -177,9 +182,6 @@
 
   .Article
     margin-top: 10rem
-    a
-      color: darken(red, 15%)
-      border-bottom: 1px dotted darken(red, 15%)
     img
       display: inline
       height: auto
