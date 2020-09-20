@@ -21,10 +21,12 @@
           %a{href: "mailto:#{ENV['EMAIL_ADDRESS']}"}
             - svg_use_tag '#envelope', 'Icon'
           %a.resume{href: 'PhilOye-CV.pdf', title: 'Download resume'}
-            - svg_use_tag '#download', 'Icon Icon--Smaller'
 
         .Stripe__Leadin
-          %h2 A bit of work history…
+          %h2
+            - svg_use_tag '#download', 'Icon'
+            Work history or
+            %a.resume{href: 'PhilOye-CV.pdf'} download PDF
 
     %section.Stripe.Stripe--Reversed.Stripe--Atlassian
       .Stripe__Inner
