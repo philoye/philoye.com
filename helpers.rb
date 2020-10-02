@@ -12,7 +12,7 @@ module Haml::Helpers
   end
 
   def inline_svg(filename)
-    path = File.join("src/#{filename}.svg")
+    path = File.join("src/svg/#{filename}.svg")
 		File.read(path)
   end
 
