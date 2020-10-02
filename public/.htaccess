@@ -19,3 +19,7 @@ RewriteRule ^(.*)$ https://philoye.com/$1 [R,L]
 #Fix trailing slash problem
 RewriteRule ^([^\.]+[^/])$ https://philoye\.com/$1/ [R=301,L]
 
+#Remove .html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\.html$ /$1 [L,R=301] 
