@@ -13,7 +13,7 @@
 require './helpers'
 
 guard 'haml', input: 'src', output: 'build' do
-  watch(/^[^_].+(\.haml)/)
+  watch(/^[^_].+\.haml/)
 end
 
 watch(/_{1}.+(\.haml)/) do |f|
