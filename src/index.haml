@@ -12,6 +12,8 @@
         %nav
           %a{href: "https://twitter.com/#{ENV['USERNAME']}"}
             - svg_use_tag '#twitter', 'Icon'
+          %a{href: "https://mstdn.social/@#{ENV['USERNAME']}", rel: "me"}
+            - svg_use_tag '#mastadon', 'Icon Icon--Tiny Mastodon'
           %a{href: "https://instagram.com/#{ENV['USERNAME']}"}
             - svg_use_tag '#instagram', 'Icon'
           %a{href: "https://github.com/#{ENV['USERNAME']}"}
