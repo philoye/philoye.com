@@ -1,6 +1,7 @@
 require 'dotenv/tasks'
 
 task :deploy => :dotenv do
+  sh "rm build/_*.html"
   sh "scp -rp build/* #{ENV['PRODUCTION_SERVER']}"
   sh "git push"
 end
