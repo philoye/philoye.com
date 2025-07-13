@@ -7,13 +7,13 @@ require 'base64'
 module Haml::Helpers
   def svg_use_tag(id, klass)
     haml_tag :svg, :class => klass do
-      haml_tag :use, "xlink:href"=>id
+      haml_tag :use, "xlink:href" => id
     end
   end
 
   def inline_svg(filename)
     path = File.join("src/svg/#{filename}.svg")
-		File.read(path)
+    File.read(path)
   end
 
   def inline_jpeg(filename, width, height, classname )
